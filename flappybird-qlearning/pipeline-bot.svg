@@ -1,0 +1,348 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" width="1200" height="264"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style type="text/css">
+    .func_g:hover { stroke:black; stroke-width:0.5; cursor:pointer; }
+</style>
+<svg class="func_g" x="0.07126567468707443" y="96" width="1198.928728983899" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 99.99% (1 1 0.020736300000000003 224.6462854)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 140, 79)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="0.1278948077669415" y="72" width="1197.1339557854737" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 99.84% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 115, 64)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="0.1278948077669415" y="48" width="200.7378485961486" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:34:act 16.81% (17959637 17959637 20.7905276 37.7686251)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 90, 49)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">act</text>
+</g></svg>
+<svg class="func_g" x="0.1278948077669415" y="24" width="81.323570654351" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:93:map_state 6.86% (17959637 17959637 15.412319 15.412319)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 90, 49)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">map_state</text>
+</g></svg>
+<svg class="func_g" x="82.45146546211792" y="24" width="7.363470609050703" height="23"><g>
+    <title>~:0:&lt;method 'append' of 'list' objects&gt; 0.70% (17959637 17959637 1.5657785000000002 1.5657785000000002)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 115, 64)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;method 'append' of 'list' objects&gt;</text>
+</g></svg>
+<svg class="func_g" x="201.86574340391553" y="48" width="85.83227819011547" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:53:update_scores 7.24% (3000 3000 13.6277488 16.2564228)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 140, 79)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">update_scores</text>
+</g></svg>
+<svg class="func_g" x="201.86574340391553" y="24" width="13.02040687519431" height="23"><g>
+    <title>~:0:&lt;built-in method builtins.max&gt; 1.17% (17959637 17959637 2.6248495000000003 2.6248495000000003)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 165, 95)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;built-in method builtins.max&gt;</text>
+</g></svg>
+<svg class="func_g" x="288.69802159403105" y="48" width="10.81928884031783" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:222:getRandomPipe 0.98% (482574 482574 0.7673608000000001 2.2127642)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 215, 125)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">getRandomPipe</text>
+</g></svg>
+<svg class="func_g" x="288.69802159403105" y="24" width="6.720497410152174" height="23"><g>
+    <title>D:\Anaconda3\envs\RL\Lib\random.py:284:randrange 0.64% (482574 482574 0.6537906 1.4454034)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 115, 64)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">randrange</text>
+</g></svg>
+<svg class="func_g" x="288.69802159403105" y="0" width="2.3726775258154573" height="23"><g>
+    <title>D:\Anaconda3\envs\RL\Lib\random.py:235:_randbelow_with_getrandbits 0.28% (482574 482574 0.4580496 0.6314204)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 190, 110)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">_randbelow_with_getrandbits</text>
+</g></svg>
+<svg class="func_g" x="300.5173104343489" y="48" width="533.0444796471297" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:236:checkCrash 44.50% (17959637 17959637 70.2413202 99.981862)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 115, 64)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">checkCrash</text>
+</g></svg>
+<svg class="func_g" x="300.5173104343489" y="24" width="157.85653509838326" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:268:pixelCollision 13.24% (85186414 85186414 22.8116281 29.740541800000003)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 165, 95)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">pixelCollision</text>
+</g></svg>
+<svg class="func_g" x="301.0506607331988" y="0" width="35.47684372450566" height="23"><g>
+    <title>~:0:&lt;method 'clip' of 'pygame.rect.Rect' objects&gt; 3.04% (85186414 85186414 6.829061800000001 6.829061800000001)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 190, 110)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;method 'clip' of 'pygame.rect.Rect' objects&gt;</text>
+</g></svg>
+<svg class="func_g" x="834.5617900814786" y="48" width="18.518666301008324" height="23"><g>
+    <title>~:0:&lt;built-in method builtins.min&gt; 1.63% (17956637 17956637 3.6542136000000003 3.6542136000000003)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 190, 110)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;built-in method builtins.min&gt;</text>
+</g></svg>
+<svg class="func_g" x="854.0804563824869" y="48" width="2.3106637136631774" height="23"><g>
+    <title>~:0:&lt;built-in method builtins.next&gt; 0.28% (5984572 5984572 0.6198104 0.6198104)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 190, 110)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;built-in method builtins.next&gt;</text>
+</g></svg>
+<svg class="func_g" x="1198.2618505932408" y="72" width="1" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:194:showGameOverScreen 0.14% (3000 3000 0.0036553 0.3041265)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 140, 79)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">showGameOverScreen</text>
+</g></svg>
+<svg class="func_g" x="1198.2638002092126" y="48" width="1" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:114:dump_qvalues 0.13% (1 1 1.29e-05 0.28560810000000003)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 240, 141)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">dump_qvalues</text>
+</g></svg>
+<svg class="func_g" x="1198.2638002092126" y="24" width="1" height="23"><g>
+    <title>D:\Anaconda3\envs\RL\Lib\json\__init__.py:120:dump 0.13% (1 1 0.051228100000000006 0.2844705)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 115, 64)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">dump</text>
+</g></svg>
+<svg class="func_g" x="1.222550761940746" y="144" width="1.4466323730255786" height="23"><g>
+    <title>D:\Anaconda3\envs\RL\Lib\random.py:235:_randbelow_with_getrandbits 0.20% (482574 482574 0.4580496 0.6314204)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 190, 110)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">_randbelow_with_getrandbits</text>
+</g></svg>
+<svg class="func_g" x="1.222550761940746" y="168" width="1.4466323730255786" height="23"><g>
+    <title>D:\Anaconda3\envs\RL\Lib\random.py:284:randrange 0.20% (482574 482574 0.4580496 0.6314204)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">randrange</text>
+</g></svg>
+<svg class="func_g" x="1.222550761940746" y="192" width="1.4466323730255786" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:222:getRandomPipe 0.29% (482574 482574 0.6537906 1.4454034)</title>
+    <rect height="100%" width="100%" fill="rgb(197, 197, 197)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">getRandomPipe</text>
+</g></svg>
+<svg class="func_g" x="1.222550761940746" y="216" width="1.4466323730255786" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 0.34% (482574 482574 0.7673608000000001 2.2127642)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="1.222550761940746" y="240" width="1.446632373025579" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="3.669183134966324" y="144" width="2.4921660168239788" height="23"><g>
+    <title>D:\Anaconda3\envs\RL\Lib\random.py:284:randrange 0.29% (482574 482574 0.6537906 1.4454034)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 115, 64)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">randrange</text>
+</g></svg>
+<svg class="func_g" x="3.669183134966324" y="168" width="2.4921660168239788" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:222:getRandomPipe 0.29% (482574 482574 0.6537906 1.4454034)</title>
+    <rect height="100%" width="100%" fill="rgb(197, 197, 197)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">getRandomPipe</text>
+</g></svg>
+<svg class="func_g" x="3.669183134966324" y="192" width="2.4921660168239788" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 0.34% (482574 482574 0.7673608000000001 2.2127642)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="3.669183134966324" y="216" width="2.4921660168239788" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="7.161438887539155" y="144" width="110.05080733274691" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:34:act 9.25% (17959637 17959637 20.7905276 37.7686251)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 90, 49)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">act</text>
+</g></svg>
+<svg class="func_g" x="7.161438887539155" y="168" width="110.05080733274691" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 9.25% (17959637 17959637 20.7905276 37.7686251)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="7.161438887539155" y="192" width="110.05080733274691" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="118.21224622028606" y="144" width="71.79144307852356" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:53:update_scores 6.07% (3000 3000 13.6277488 16.2564228)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 140, 79)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">update_scores</text>
+</g></svg>
+<svg class="func_g" x="118.21224622028606" y="168" width="71.79144307852356" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 6.07% (3000 3000 13.6277488 16.2564228)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="118.21224622028606" y="192" width="71.79144307852356" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="191.0036892988096" y="144" width="81.323570654351" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:93:map_state 6.86% (17959637 17959637 15.412319 15.412319)</title>
+    <rect height="100%" width="100%" fill="rgb(166, 166, 255)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">map_state</text>
+</g></svg>
+<svg class="func_g" x="191.0036892988096" y="168" width="81.323570654351" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:34:act 6.86% (17959637 17959637 15.412319 15.412319)</title>
+    <rect height="100%" width="100%" fill="rgb(232, 232, 232)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">act</text>
+</g></svg>
+<svg class="func_g" x="191.0036892988096" y="192" width="81.323570654351" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 9.25% (17959637 17959637 20.7905276 37.7686251)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="191.0036892988096" y="216" width="81.323570654351" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="273.49471914576765" y="144" width="338.71723994015235" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 115, 64)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="273.49471914576765" y="168" width="338.71723994015235" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="613.2314835551327" y="144" width="3.0987914301656554" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:222:getRandomPipe 0.34% (482574 482574 0.7673608000000001 2.2127642)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 215, 125)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">getRandomPipe</text>
+</g></svg>
+<svg class="func_g" x="613.2314835551327" y="168" width="3.0987914301656554" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 0.34% (482574 482574 0.7673608000000001 2.2127642)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="613.2314835551327" y="192" width="3.0987914301656554" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="617.3302749852985" y="144" width="374.1879445487465" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:236:checkCrash 31.27% (17959637 17959637 70.2413202 99.981862)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 115, 64)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">checkCrash</text>
+</g></svg>
+<svg class="func_g" x="617.3302749852985" y="168" width="374.1879445487465" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 31.27% (17959637 17959637 70.2413202 99.981862)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="617.3302749852985" y="192" width="374.1879445487465" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="992.5182195340449" y="144" width="120.84634107502761" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:268:pixelCollision 10.15% (85186414 85186414 22.8116281 29.740541800000003)</title>
+    <rect height="100%" width="100%" fill="rgb(255, 165, 95)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">pixelCollision</text>
+</g></svg>
+<svg class="func_g" x="992.5182195340449" y="168" width="120.84634107502761" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:236:checkCrash 10.15% (85186414 85186414 22.8116281 29.740541800000003)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">checkCrash</text>
+</g></svg>
+<svg class="func_g" x="992.5182195340449" y="192" width="120.84634107502761" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 31.27% (17959637 17959637 70.2413202 99.981862)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="992.5182195340449" y="216" width="120.84634107502761" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="1115.9027061241668" y="144" width="13.020410614183843" height="23"><g>
+    <title>~:0:&lt;built-in method builtins.max&gt; 1.17% (17959638 17959638 2.6248502 2.6248502)</title>
+    <rect height="100%" width="100%" fill="rgb(198, 198, 255)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;built-in method builtins.max&gt;</text>
+</g></svg>
+<svg class="func_g" x="1115.9027098631561" y="168" width="13.020406875194308" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:53:update_scores 1.17% (17959637 17959637 2.6248495000000003 2.6248495000000003)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">update_scores</text>
+</g></svg>
+<svg class="func_g" x="1115.9027098631561" y="192" width="13.020406875194308" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 6.07% (3000 3000 13.6277488 16.2564228)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="1115.9027098631561" y="216" width="13.020406875194308" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="1129.9231167383507" y="144" width="18.518666301008324" height="23"><g>
+    <title>~:0:&lt;built-in method builtins.min&gt; 1.63% (17956637 17956637 3.6542136000000003 3.6542136000000003)</title>
+    <rect height="100%" width="100%" fill="rgb(214, 214, 255)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;built-in method builtins.min&gt;</text>
+</g></svg>
+<svg class="func_g" x="1129.9231167383507" y="168" width="18.518666301008324" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 1.63% (17956637 17956637 3.6542136000000003 3.6542136000000003)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="1129.9231167383507" y="192" width="18.51866630100832" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="1149.4417830393588" y="144" width="2.3106637136631774" height="23"><g>
+    <title>~:0:&lt;built-in method builtins.next&gt; 0.28% (5984572 5984572 0.6198104 0.6198104)</title>
+    <rect height="100%" width="100%" fill="rgb(214, 214, 255)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;built-in method builtins.next&gt;</text>
+</g></svg>
+<svg class="func_g" x="1149.4417830393588" y="168" width="2.3106637136631774" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 0.28% (5984572 5984572 0.6198104 0.6198104)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="1149.4417830393588" y="192" width="2.3106637136631774" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="1153.3934868943309" y="144" width="7.363470609050703" height="23"><g>
+    <title>~:0:&lt;method 'append' of 'list' objects&gt; 0.70% (17959637 17959637 1.5657785000000002 1.5657785000000002)</title>
+    <rect height="100%" width="100%" fill="rgb(166, 166, 255)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;method 'append' of 'list' objects&gt;</text>
+</g></svg>
+<svg class="func_g" x="1153.3934868943309" y="168" width="7.363470609050703" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\bot.py:34:act 0.70% (17959637 17959637 1.5657785000000002 1.5657785000000002)</title>
+    <rect height="100%" width="100%" fill="rgb(232, 232, 232)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">act</text>
+</g></svg>
+<svg class="func_g" x="1153.3934868943309" y="192" width="7.3634706090507045" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 9.25% (17959637 17959637 20.7905276 37.7686251)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="1153.3934868943309" y="216" width="7.3634706090507045" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+<svg class="func_g" x="1162.0951880991827" y="144" width="35.47684372450566" height="23"><g>
+    <title>~:0:&lt;method 'clip' of 'pygame.rect.Rect' objects&gt; 3.04% (85186414 85186414 6.829061800000001 6.829061800000001)</title>
+    <rect height="100%" width="100%" fill="rgb(198, 198, 255)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">&lt;method 'clip' of 'pygame.rect.Rect' objects&gt;</text>
+</g></svg>
+<svg class="func_g" x="1162.0951880991827" y="168" width="35.47684372450566" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:268:pixelCollision 3.04% (85186414 85186414 6.829061800000001 6.829061800000001)</title>
+    <rect height="100%" width="100%" fill="rgb(211, 211, 211)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">pixelCollision</text>
+</g></svg>
+<svg class="func_g" x="1162.0951880991827" y="192" width="35.47684372450566" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:236:checkCrash 10.15% (85186414 85186414 22.8116281 29.740541800000003)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">checkCrash</text>
+</g></svg>
+<svg class="func_g" x="1162.0951880991827" y="216" width="35.47684372450566" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:82:mainGame 31.27% (17959637 17959637 70.2413202 99.981862)</title>
+    <rect height="100%" width="100%" fill="rgb(225, 225, 225)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">mainGame</text>
+</g></svg>
+<svg class="func_g" x="1162.0951880991827" y="240" width="35.47684372450566" height="23"><g>
+    <title>d:\CodeWork\CodeTest\course_learning\reinforcement-learning\flappybird-qlearning-bot-master\src\learn-opt.py:50:main 28.31% (3000 3000 63.600624100000005 224.31027450000002)</title>
+    <rect height="100%" width="100%" fill="rgb(218, 218, 218)" rx="2" ry="2" />
+    <text alignment-baseline="central" x="4.0" y="12.0" font-size="12px" fill="rgb(0,0,0)">main</text>
+</g></svg>
+</svg>
