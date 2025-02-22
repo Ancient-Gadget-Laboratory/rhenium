@@ -1,0 +1,19 @@
+# date: 2025-02-23, run with python 3.11.11
+black==25.1.0
+box2d-py==2.3.5
+flameprof==0.4
+gymnasium==1.0.0
+ipython==8.32.0
+isort==6.0.0
+matplotlib==3.10.0
+mujoco==3.2.7
+numba==0.61.0
+numpy==2.0.2
+opencv-python==4.11.0.86
+pygame-ce==2.5.3
+scikit-learn==1.6.1
+scipy==1.15.2
+taichi==1.7.3
+tensorflow==2.18.0
+torch==2.6.0
+tqdm==4.67.1
