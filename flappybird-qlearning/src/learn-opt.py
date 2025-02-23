@@ -57,7 +57,7 @@ iter_range = tqdm(range(ITERATIONS), desc="Game Count", colour="red")
 
 
 def main():
-    global HITMASKS, bot, IS_RUNNING
+    global HITMASKS, bot
 
     # 确保日志级别设置正确
     logging.getLogger().setLevel(logging.DEBUG if DEBUG else logging.INFO)
@@ -210,13 +210,11 @@ def showGameOverScreen(crashInfo):
         score = crashInfo["score"]
         logging.debug(str(bot.gameCNT - 1) + " | " + str(score))
 
-    if bot.gameCNT % 100 == 0:
-        logging.debug("Game count: " + str(bot.gameCNT))
-
     if bot.gameCNT == (ITERATIONS):
+        logging.debug("\nGame Over\n")
         bot.dump_qvalues(force=True)
         end_time = time.time()
-        logging.debug("Time taken: " + str(end_time - start_time))
+        logging.debug("\nTime taken: " + str(end_time - start_time))
         return False
 
     return True
@@ -309,9 +307,9 @@ if __name__ == "__main__":
     if DEBUG:
         pr.disable()
         output_dir = Path(__file__).resolve().parent / "benchmark"
-        pr.dump_stats(f"{output_dir}/pipeline.prof")
+        pr.dump_stats(f"{output_dir}/pipeline-bot.prof")
         os.system(
-            f"python -m flameprof {output_dir}/pipeline.prof > {output_dir}/pipeline-bot.svg"
+            f"python -m flameprof {output_dir}/pipeline-bot.prof > {output_dir}/pipeline-bot.svg"
         )
         s = io.StringIO()
         ps = pstats.Stats(pr, stream=s).sort_stats("cumtime")
