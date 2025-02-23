@@ -11,10 +11,9 @@ import random
 from collections import deque
 
 import cv2
+import game.wrapped_flappy_bird as game
 import numpy as np
 import tensorflow as tf
-
-import game.wrapped_flappy_bird as game
 
 RETRAIN = False
 
@@ -113,10 +112,6 @@ def trainNetwork(s, readout, h_fc1, sess):
 
     # store the previous observations in replay memory
     D = deque()
-
-    # printing
-    open("logs_" + GAME + "/readout.txt", "w")
-    open("logs_" + GAME + "/hidden.txt", "w")
 
     # get the first state by doing nothing and preprocess the image to 80x80x4
     do_nothing = np.zeros(ACTIONS)

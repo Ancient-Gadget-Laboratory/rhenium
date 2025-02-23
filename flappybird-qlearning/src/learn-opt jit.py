@@ -4,6 +4,7 @@ import random
 import sys
 from collections import deque
 from itertools import cycle
+from pathlib import Path
 
 sys.path.append(os.getcwd())
 
@@ -12,9 +13,9 @@ import io
 import logging
 import pstats
 import time
+
 import numba as nb
 import numpy as np
-
 from bot import Bot
 
 logging.basicConfig(level=logging.INFO)
@@ -52,7 +53,8 @@ def main():
     global HITMASKS, bot, HITMASKS_NP
 
     # load dumped HITMASKS
-    with open("data/hitmasks_data.pkl", "rb") as input:
+    data_dir = Path(__file__).resolve().parent.parent / "data"
+    with open(f"{data_dir}/hitmasks_data.pkl", "rb") as input:
         HITMASKS = pickle.load(input)
 
     HITMASKS_NP = {
@@ -368,8 +370,11 @@ if __name__ == "__main__":
 
     if DEBUG:
         pr.disable()
-        pr.dump_stats("pipeline.prof")
-        os.system("python -m flameprof pipeline.prof > pipeline-jit.svg")
+        output_dir = Path(__file__).resolve().parent / "benchmark"
+        pr.dump_stats(f"{output_dir}/pipeline.prof")
+        os.system(
+            f"python -m flameprof {output_dir}/pipeline.prof > {output_dir}/pipeline-bot.svg"
+        )
         s = io.StringIO()
         ps = pstats.Stats(pr, stream=s).sort_stats("cumtime")
         ps.print_stats()

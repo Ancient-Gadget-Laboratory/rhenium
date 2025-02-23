@@ -1,5 +1,6 @@
 import json
 from itertools import chain
+from pathlib import Path
 
 # Script to create Q-Value JSON file, initilazing with zeros
 
@@ -11,7 +12,7 @@ for x in chain(list(range(-40, 140, 10)), list(range(140, 421, 70))):
         for v in range(-10, 11):
             qval[str(x) + "_" + str(y) + "_" + str(v)] = [0, 0]
 
-
-fd = open("data/qvalues.json", "w")
+data_dir = Path(__file__).resolve().parent.parent / "data"
+fd = open(f"{data_dir}/qvalues.json", "w")
 json.dump(qval, fd)
 fd.close()

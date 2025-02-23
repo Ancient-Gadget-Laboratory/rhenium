@@ -4,6 +4,7 @@ import pickle
 import random
 import sys
 from itertools import cycle
+from pathlib import Path
 
 import pygame
 
@@ -52,7 +53,8 @@ def main():
     VERBOSE = args.verbose
 
     # load dumped HITMASKS
-    with open("data/hitmasks_data.pkl", "rb") as input:
+    data_dir = Path(__file__).resolve().parent.parent / "data"
+    with open(f"{data_dir}/hitmasks_data.pkl", "rb") as input:
         HITMASKS = pickle.load(input)
 
     while True:

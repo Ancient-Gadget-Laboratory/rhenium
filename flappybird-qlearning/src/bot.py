@@ -1,4 +1,9 @@
 import json
+import logging
+from pathlib import Path
+
+logging.basicConfig(level=logging.DEBUG)
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 
 class Bot(object):
@@ -25,7 +30,7 @@ class Bot(object):
         """
         self.qvalues = {}
         try:
-            fil = open("data/qvalues.json", "r")
+            fil = open(f"{DATA_DIR}/qvalues.json", "r")
         except IOError:
             return
         self.qvalues = json.load(fil)
@@ -81,7 +86,9 @@ class Bot(object):
             # Q-learning 更新
             old_val = qvalues[state][act]
             q_max = max(qvalues[res_state])
-            self.qvalues[state][act] = (1 - lr) * old_val + lr * (cur_reward + discount * q_max)
+            self.qvalues[state][act] = (1 - lr) * old_val + lr * (
+                cur_reward + discount * q_max
+            )
 
             t += 1
 
@@ -116,7 +123,7 @@ class Bot(object):
         Dump the qvalues to the JSON file
         """
         if self.gameCNT % self.DUMPING_N == 0 or force:
-            fil = open("data/qvalues.json", "w")
+            fil = open(f"{DATA_DIR}/qvalues.json", "w")
             json.dump(self.qvalues, fil)
             fil.close()
-            print("Q-values updated on local file.")
+            logging.debug("Q-values updated on local file.")

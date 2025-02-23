@@ -4,8 +4,10 @@ import random
 import sys
 from collections import deque
 from itertools import cycle
+from pathlib import Path
 
 import pygame
+from tqdm import tqdm
 
 sys.path.append(os.getcwd())
 
@@ -14,15 +16,19 @@ import io
 import logging
 import pstats
 import time
+
 from bot import Bot
 
-logging.basicConfig(level=logging.INFO)
-DEBUG = True
+DEBUG = False  # 将DEBUG设置为False以禁用DEBUG消息
+logging.basicConfig(
+    level=logging.DEBUG if DEBUG else logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
+start_time = time.time()
 
 if DEBUG:
     pr = cProfile.Profile()
     pr.enable()
-    start_time = time.time()
 
 # Initialize the bot
 bot = Bot()
@@ -46,12 +52,19 @@ BACKGROUND = [288, 512]
 ITERATIONS = 3000
 VERBOSE = False
 
+# tqdm setup
+iter_range = tqdm(range(ITERATIONS), desc="Game Count", colour="red")
+
 
 def main():
     global HITMASKS, bot, IS_RUNNING
 
+    # 确保日志级别设置正确
+    logging.getLogger().setLevel(logging.DEBUG if DEBUG else logging.INFO)
+
     # load dumped HITMASKS
-    with open("data/hitmasks_data.pkl", "rb") as input:
+    data_dir = Path(__file__).resolve().parent.parent / "data"
+    with open(f"{data_dir}/hitmasks_data.pkl", "rb") as input:
         HITMASKS = pickle.load(input)
 
     IS_RUNNING = True
@@ -59,6 +72,7 @@ def main():
     while IS_RUNNING:
         movementInfo = showWelcomeAnimation()
         crashInfo = mainGame(movementInfo)
+        iter_range.update(1)
         IS_RUNNING = showGameOverScreen(crashInfo)
 
 
@@ -194,15 +208,15 @@ def mainGame(movementInfo):
 def showGameOverScreen(crashInfo):
     if VERBOSE:
         score = crashInfo["score"]
-        print(str(bot.gameCNT - 1) + " | " + str(score))
+        logging.debug(str(bot.gameCNT - 1) + " | " + str(score))
 
     if bot.gameCNT % 100 == 0:
-        print("Game count: " + str(bot.gameCNT))
+        logging.debug("Game count: " + str(bot.gameCNT))
 
     if bot.gameCNT == (ITERATIONS):
         bot.dump_qvalues(force=True)
         end_time = time.time()
-        logging.info("Time taken: " + str(end_time - start_time))
+        logging.debug("Time taken: " + str(end_time - start_time))
         return False
 
     return True
@@ -294,8 +308,11 @@ if __name__ == "__main__":
 
     if DEBUG:
         pr.disable()
-        pr.dump_stats("pipeline.prof")
-        os.system("python -m flameprof pipeline.prof > pipeline-bot.svg")
+        output_dir = Path(__file__).resolve().parent / "benchmark"
+        pr.dump_stats(f"{output_dir}/pipeline.prof")
+        os.system(
+            f"python -m flameprof {output_dir}/pipeline.prof > {output_dir}/pipeline-bot.svg"
+        )
         s = io.StringIO()
         ps = pstats.Stats(pr, stream=s).sort_stats("cumtime")
         ps.print_stats()

@@ -1,71 +1,74 @@
+from pathlib import Path
+
 import pygame
+
+ASSET_DIR = Path(__file__).resolve().parent.parent / "assets"
 
 
 def load():
-    # path of player with different states
+    # 玩家精灵不同状态的图片路径
     PLAYER_PATH = (
-        "assets/sprites/redbird-upflap.png",
-        "assets/sprites/redbird-midflap.png",
-        "assets/sprites/redbird-downflap.png",
+        f"{ASSET_DIR}/sprites/redbird-upflap.png",
+        f"{ASSET_DIR}/sprites/redbird-midflap.png",
+        f"{ASSET_DIR}/sprites/redbird-downflap.png",
     )
 
-    # path of background
-    BACKGROUND_PATH = "assets/sprites/background-black.png"
+    # 背景图片路径
+    BACKGROUND_PATH = f"{ASSET_DIR}/sprites/background-black.png"
 
-    # path of pipe
-    PIPE_PATH = "assets/sprites/pipe-green.png"
+    # 管道图片路径
+    PIPE_PATH = f"{ASSET_DIR}/sprites/pipe-green.png"
 
     IMAGES, SOUNDS, HITMASKS = {}, {}, {}
 
-    # numbers sprites for score display
+    # 分数字符串精灵（数字0-9）
     IMAGES["numbers"] = (
-        pygame.image.load("assets/sprites/0.png").convert_alpha(),
-        pygame.image.load("assets/sprites/1.png").convert_alpha(),
-        pygame.image.load("assets/sprites/2.png").convert_alpha(),
-        pygame.image.load("assets/sprites/3.png").convert_alpha(),
-        pygame.image.load("assets/sprites/4.png").convert_alpha(),
-        pygame.image.load("assets/sprites/5.png").convert_alpha(),
-        pygame.image.load("assets/sprites/6.png").convert_alpha(),
-        pygame.image.load("assets/sprites/7.png").convert_alpha(),
-        pygame.image.load("assets/sprites/8.png").convert_alpha(),
-        pygame.image.load("assets/sprites/9.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/0.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/1.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/2.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/3.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/4.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/5.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/6.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/7.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/8.png").convert_alpha(),
+        pygame.image.load(f"{ASSET_DIR}/sprites/9.png").convert_alpha(),
     )
 
-    # base (ground) sprite
-    IMAGES["base"] = pygame.image.load("assets/sprites/base.png").convert_alpha()
+    # 地面图片路径
+    IMAGES["base"] = pygame.image.load(f"{ASSET_DIR}/sprites/base.png").convert_alpha()
 
-    # # sounds
+    # 声音部分（目前注释掉）
     # if "win" in sys.platform:
     #     soundExt = ".wav"
     # else:
     #     soundExt = ".ogg"
+    # SOUNDS["die"] = pygame.mixer.Sound(f"{asset_dir}/audio/die" + soundExt)
+    # SOUNDS["hit"] = pygame.mixer.Sound(f"{asset_dir}/audio/hit" + soundExt)
+    # SOUNDS["point"] = pygame.mixer.Sound(f"{asset_dir}/audio/point" + soundExt)
+    # SOUNDS["swoosh"] = pygame.mixer.Sound(f"{asset_dir}/audio/swoosh" + soundExt)
+    # SOUNDS["wing"] = pygame.mixer.Sound(f"{asset_dir}/audio/wing" + soundExt)
 
-    # SOUNDS["die"] = pygame.mixer.Sound("assets/audio/die" + soundExt)
-    # SOUNDS["hit"] = pygame.mixer.Sound("assets/audio/hit" + soundExt)
-    # SOUNDS["point"] = pygame.mixer.Sound("assets/audio/point" + soundExt)
-    # SOUNDS["swoosh"] = pygame.mixer.Sound("assets/audio/swoosh" + soundExt)
-    # SOUNDS["wing"] = pygame.mixer.Sound("assets/audio/wing" + soundExt)
-
-    # select random background sprites
+    # 背景精灵
     IMAGES["background"] = pygame.image.load(BACKGROUND_PATH).convert()
 
-    # select random player sprites
+    # 玩家精灵
     IMAGES["player"] = (
         pygame.image.load(PLAYER_PATH[0]).convert_alpha(),
         pygame.image.load(PLAYER_PATH[1]).convert_alpha(),
         pygame.image.load(PLAYER_PATH[2]).convert_alpha(),
     )
 
-    # select random pipe sprites
+    # 管道精灵，分别为颠倒和正常状态
     IMAGES["pipe"] = (
         pygame.transform.rotate(pygame.image.load(PIPE_PATH).convert_alpha(), 180),
         pygame.image.load(PIPE_PATH).convert_alpha(),
     )
 
-    # hismask for pipes
+    # 管道的碰撞检测遮罩
     HITMASKS["pipe"] = (getHitmask(IMAGES["pipe"][0]), getHitmask(IMAGES["pipe"][1]))
 
-    # hitmask for player
+    # 玩家精灵的碰撞检测遮罩
     HITMASKS["player"] = (
         getHitmask(IMAGES["player"][0]),
         getHitmask(IMAGES["player"][1]),
@@ -76,7 +79,7 @@ def load():
 
 
 def getHitmask(image):
-    """returns a hitmask using an image's alpha."""
+    """返回一个基于图片 alpha 通道的碰撞遮罩。"""
     mask = []
     for x in range(image.get_width()):
         mask.append([])
