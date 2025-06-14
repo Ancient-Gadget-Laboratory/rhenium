@@ -5,6 +5,7 @@ import sys
 from collections import deque
 from itertools import cycle
 from pathlib import Path
+
 from tqdm import tqdm
 
 sys.path.append(os.getcwd())
@@ -21,8 +22,7 @@ from bot import Bot
 
 DEBUG = False  # 将DEBUG设置为False以禁用DEBUG消息
 logging.basicConfig(
-    level=logging.DEBUG if DEBUG else logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
+    level=logging.DEBUG if DEBUG else logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 start_time = time.time()
 
@@ -54,6 +54,7 @@ VERBOSE = False
 
 # tqdm setup
 iter_range = tqdm(range(ITERATIONS), desc="Game Count", colour="red")
+
 
 def main():
     global HITMASKS, bot, HITMASKS_NP
@@ -90,11 +91,7 @@ def showWelcomeAnimation():
     # player shm for up-down motion on welcome screen
     playerShmVals = {"val": 0, "dir": 1}
 
-    return {
-        "playery": playery + playerShmVals["val"],
-        "basex": basex,
-        "playerIndexGen": playerIndexGen,
-    }
+    return {"playery": playery + playerShmVals["val"], "basex": basex, "playerIndexGen": playerIndexGen}
 
 
 def mainGame(movementInfo):
@@ -155,9 +152,7 @@ def mainGame(movementInfo):
                 playerFlapped = True
 
         # 检查碰撞
-        crashTest = checkCrash(
-            {"x": playerx, "y": playery, "index": playerIndex}, upperPipes, lowerPipes
-        )
+        crashTest = checkCrash({"x": playerx, "y": playery, "index": playerIndex}, upperPipes, lowerPipes)
         if crashTest[0]:
             bot.update_scores(dump_qvalues=False)
             return {
@@ -275,41 +270,20 @@ def pixelCollision_numba(x1, y1, w1, h1, hitmask1, x2, y2, w2, h2, hitmask2):
 
     for i in range(inter_width):
         for j in range(inter_height):
-            if (
-                hitmask1[start1_x + i, start1_y + j]
-                and hitmask2[start2_x + i, start2_y + j]
-            ):
+            if hitmask1[start1_x + i, start1_y + j] and hitmask2[start2_x + i, start2_y + j]:
                 return True
     return False
 
 
 @nb.njit(fastmath=True)
 def checkPipeCollision_numba(
-    player_x,
-    player_y,
-    player_w,
-    player_h,
-    pipe_x,
-    pipe_y,
-    pipe_w,
-    pipe_h,
-    hitmask_player,
-    hitmask_pipe,
+    player_x, player_y, player_w, player_h, pipe_x, pipe_y, pipe_w, pipe_h, hitmask_player, hitmask_pipe
 ):
     """
     调用 numba 优化后的像素碰撞检测，并传入已转换为 int 的参数
     """
     return pixelCollision_numba(
-        player_x,
-        player_y,
-        player_w,
-        player_h,
-        hitmask_player,
-        pipe_x,
-        pipe_y,
-        pipe_w,
-        pipe_h,
-        hitmask_pipe,
+        player_x, player_y, player_w, player_h, hitmask_player, pipe_x, pipe_y, pipe_w, pipe_h, hitmask_pipe
     )
 
 
@@ -347,27 +321,9 @@ def checkCrash(player, upperPipes, lowerPipes):
         l_x = int(lPipe["x"])
         l_y = int(lPipe["y"])
         if checkPipeCollision_numba(
-            player_x,
-            player_y,
-            player_w,
-            player_h,
-            u_x,
-            u_y,
-            pipeW,
-            pipeH,
-            hitmask_player,
-            uHitmask,
+            player_x, player_y, player_w, player_h, u_x, u_y, pipeW, pipeH, hitmask_player, uHitmask
         ) or checkPipeCollision_numba(
-            player_x,
-            player_y,
-            player_w,
-            player_h,
-            l_x,
-            l_y,
-            pipeW,
-            pipeH,
-            hitmask_player,
-            lHitmask,
+            player_x, player_y, player_w, player_h, l_x, l_y, pipeW, pipeH, hitmask_player, lHitmask
         ):
             return [True, False]
     return [False, False]
@@ -380,9 +336,7 @@ if __name__ == "__main__":
         pr.disable()
         output_dir = Path(__file__).resolve().parent / "benchmark"
         pr.dump_stats(f"{output_dir}/pipeline-jit.prof")
-        os.system(
-            f"python -m flameprof {output_dir}/pipeline-jit.prof > {output_dir}/pipeline-jit.svg"
-        )
+        os.system(f"python -m flameprof {output_dir}/pipeline-jit.prof > {output_dir}/pipeline-jit.svg")
         s = io.StringIO()
         ps = pstats.Stats(pr, stream=s).sort_stats("cumtime")
         ps.print_stats()

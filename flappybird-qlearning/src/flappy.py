@@ -57,10 +57,7 @@ BACKGROUNDS_LIST = (
 )
 
 # list of pipes
-PIPES_LIST = (
-    f"{DATA_DIR}/assets/sprites/pipe-green.png",
-    f"{DATA_DIR}/assets/sprites/pipe-red.png",
-)
+PIPES_LIST = (f"{DATA_DIR}/assets/sprites/pipe-green.png", f"{DATA_DIR}/assets/sprites/pipe-red.png")
 
 
 def main():
@@ -88,17 +85,11 @@ def main():
     )
 
     # game over sprite
-    IMAGES["gameover"] = pygame.image.load(
-        f"{DATA_DIR}/assets/sprites/gameover.png"
-    ).convert_alpha()
+    IMAGES["gameover"] = pygame.image.load(f"{DATA_DIR}/assets/sprites/gameover.png").convert_alpha()
     # message sprite for welcome screen
-    IMAGES["message"] = pygame.image.load(
-        f"{DATA_DIR}/assets/sprites/message.png"
-    ).convert_alpha()
+    IMAGES["message"] = pygame.image.load(f"{DATA_DIR}/assets/sprites/message.png").convert_alpha()
     # base (ground) sprite
-    IMAGES["base"] = pygame.image.load(
-        f"{DATA_DIR}/assets/sprites/base.png"
-    ).convert_alpha()
+    IMAGES["base"] = pygame.image.load(f"{DATA_DIR}/assets/sprites/base.png").convert_alpha()
 
     # sounds
     if "win" in sys.platform:
@@ -128,17 +119,12 @@ def main():
         # select random pipe sprites
         pipeindex = random.randint(0, len(PIPES_LIST) - 1)
         IMAGES["pipe"] = (
-            pygame.transform.rotate(
-                pygame.image.load(PIPES_LIST[pipeindex]).convert_alpha(), 180
-            ),
+            pygame.transform.rotate(pygame.image.load(PIPES_LIST[pipeindex]).convert_alpha(), 180),
             pygame.image.load(PIPES_LIST[pipeindex]).convert_alpha(),
         )
 
         # hismask for pipes
-        HITMASKS["pipe"] = (
-            getHitmask(IMAGES["pipe"][0]),
-            getHitmask(IMAGES["pipe"][1]),
-        )
+        HITMASKS["pipe"] = (getHitmask(IMAGES["pipe"][0]), getHitmask(IMAGES["pipe"][1]))
 
         # hitmask for player
         HITMASKS["player"] = (
@@ -195,11 +181,7 @@ def showWelcomeAnimation():
                 }
         """
         SOUNDS["wing"].play()
-        return {
-            "playery": playery + playerShmVals["val"],
-            "basex": basex,
-            "playerIndexGen": playerIndexGen,
-        }
+        return {"playery": playery + playerShmVals["val"], "basex": basex, "playerIndexGen": playerIndexGen}
 
         # adjust playery, playerIndex, basex
         if (loopIter + 1) % 5 == 0:
@@ -210,9 +192,7 @@ def showWelcomeAnimation():
 
         # draw sprites
         SCREEN.blit(IMAGES["background"], (0, 0))
-        SCREEN.blit(
-            IMAGES["player"][playerIndex], (playerx, playery + playerShmVals["val"])
-        )
+        SCREEN.blit(IMAGES["player"][playerIndex], (playerx, playery + playerShmVals["val"]))
         SCREEN.blit(IMAGES["message"], (messagex, messagey))
         SCREEN.blit(IMAGES["base"], (basex, BASEY))
 
@@ -279,9 +259,7 @@ def mainGame(movementInfo):
                 SOUNDS["wing"].play()
 
         # check for crash here
-        crashTest = checkCrash(
-            {"x": playerx, "y": playery, "index": playerIndex}, upperPipes, lowerPipes
-        )
+        crashTest = checkCrash({"x": playerx, "y": playery, "index": playerIndex}, upperPipes, lowerPipes)
         if crashTest[0]:
             # Update the q scores
             bot.update_scores()

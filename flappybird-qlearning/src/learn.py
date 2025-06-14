@@ -42,12 +42,8 @@ def main():
     global HITMASKS, ITERATIONS, VERBOSE, bot
 
     parser = argparse.ArgumentParser("learn.py")
-    parser.add_argument(
-        "--iter", type=int, default=1000, help="number of iterations to run"
-    )
-    parser.add_argument(
-        "--verbose", action="store_true", help="output [iteration | score] to stdout"
-    )
+    parser.add_argument("--iter", type=int, default=1000, help="number of iterations to run")
+    parser.add_argument("--verbose", action="store_true", help="output [iteration | score] to stdout")
     args = parser.parse_args()
     ITERATIONS = args.iter
     VERBOSE = args.verbose
@@ -75,11 +71,7 @@ def showWelcomeAnimation():
     # player shm for up-down motion on welcome screen
     playerShmVals = {"val": 0, "dir": 1}
 
-    return {
-        "playery": playery + playerShmVals["val"],
-        "basex": basex,
-        "playerIndexGen": playerIndexGen,
-    }
+    return {"playery": playery + playerShmVals["val"], "basex": basex, "playerIndexGen": playerIndexGen}
 
 
 def mainGame(movementInfo):
@@ -130,9 +122,7 @@ def mainGame(movementInfo):
                 playerFlapped = True
 
         # check for crash here
-        crashTest = checkCrash(
-            {"x": playerx, "y": playery, "index": playerIndex}, upperPipes, lowerPipes
-        )
+        crashTest = checkCrash({"x": playerx, "y": playery, "index": playerIndex}, upperPipes, lowerPipes)
         if crashTest[0]:
             # Update the q scores
             bot.update_scores(dump_qvalues=False)

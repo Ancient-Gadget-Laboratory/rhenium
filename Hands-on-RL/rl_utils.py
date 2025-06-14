@@ -24,9 +24,7 @@ class ReplayBuffer:
 
 def moving_average(a, window_size):
     cumulative_sum = np.cumsum(np.insert(a, 0, 0))
-    middle = (
-        cumulative_sum[window_size:] - cumulative_sum[:-window_size]
-    ) / window_size
+    middle = (cumulative_sum[window_size:] - cumulative_sum[:-window_size]) / window_size
     r = np.arange(1, window_size - 1, 2)
     begin = np.cumsum(a[: window_size - 1])[::2] / r
     end = (np.cumsum(a[:-window_size:-1])[::2] / r)[::-1]
@@ -71,9 +69,7 @@ def train_on_policy_agent(env, agent, num_episodes):
     return return_list
 
 
-def train_off_policy_agent(
-    env, agent, num_episodes, replay_buffer, minimal_size, batch_size
-):
+def train_off_policy_agent(env, agent, num_episodes, replay_buffer, minimal_size, batch_size):
     return_list = []
     for i in range(10):
         with tqdm(total=int(num_episodes / 10), desc="Iteration %d" % i) as pbar:

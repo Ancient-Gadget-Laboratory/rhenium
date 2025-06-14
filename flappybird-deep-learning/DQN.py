@@ -2,9 +2,7 @@ from __future__ import print_function
 
 import os
 
-os.environ["TF_ENABLE_ONEDNN_OPTS"] = (
-    "0"  # 0: disable, 1: enable (oneDNN custom operations)
-)
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"  # 0: disable, 1: enable (oneDNN custom operations)
 
 
 import random

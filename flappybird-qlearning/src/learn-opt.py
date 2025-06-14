@@ -21,8 +21,7 @@ from bot import Bot
 
 DEBUG = False  # 将DEBUG设置为False以禁用DEBUG消息
 logging.basicConfig(
-    level=logging.DEBUG if DEBUG else logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
+    level=logging.DEBUG if DEBUG else logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 start_time = time.time()
 
@@ -86,11 +85,7 @@ def showWelcomeAnimation():
     # player shm for up-down motion on welcome screen
     playerShmVals = {"val": 0, "dir": 1}
 
-    return {
-        "playery": playery + playerShmVals["val"],
-        "basex": basex,
-        "playerIndexGen": playerIndexGen,
-    }
+    return {"playery": playery + playerShmVals["val"], "basex": basex, "playerIndexGen": playerIndexGen}
 
 
 def mainGame(movementInfo):
@@ -151,9 +146,7 @@ def mainGame(movementInfo):
                 playerFlapped = True
 
         # 检查碰撞
-        crashTest = checkCrash(
-            {"x": playerx, "y": playery, "index": playerIndex}, upperPipes, lowerPipes
-        )
+        crashTest = checkCrash({"x": playerx, "y": playery, "index": playerIndex}, upperPipes, lowerPipes)
         if crashTest[0]:
             bot.update_scores(dump_qvalues=False)
             return {
@@ -293,9 +286,7 @@ def pixelCollision(rect1, rect2, hitmask1, hitmask2):
     for hitmask1_row, hitmask2_row in zip(hitmask1_sub, hitmask2_sub):
         if any(
             h1 and h2
-            for h1, h2 in zip(
-                hitmask1_row[y1 : y1 + rect.height], hitmask2_row[y2 : y2 + rect.height]
-            )
+            for h1, h2 in zip(hitmask1_row[y1 : y1 + rect.height], hitmask2_row[y2 : y2 + rect.height])
         ):
             return True
     return False
@@ -308,9 +299,7 @@ if __name__ == "__main__":
         pr.disable()
         output_dir = Path(__file__).resolve().parent / "benchmark"
         pr.dump_stats(f"{output_dir}/pipeline-bot.prof")
-        os.system(
-            f"python -m flameprof {output_dir}/pipeline-bot.prof > {output_dir}/pipeline-bot.svg"
-        )
+        os.system(f"python -m flameprof {output_dir}/pipeline-bot.prof > {output_dir}/pipeline-bot.svg")
         s = io.StringIO()
         ps = pstats.Stats(pr, stream=s).sort_stats("cumtime")
         ps.print_stats()

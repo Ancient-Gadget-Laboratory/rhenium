@@ -3,7 +3,6 @@
 import json
 from pathlib import Path
 
-
 # 定义 X, Y, 以及速度的范围
 x_values = list(range(-40, 140, 10)) + list(range(140, 421, 70))
 y_values = list(range(-300, 180, 10)) + list(range(180, 421, 60))

@@ -42,9 +42,7 @@ class Bot(object):
         """
         state = self.map_state(xdif, ydif, vel)
 
-        self.moves.append(
-            (self.last_state, self.last_action, state)
-        )  # Add the experience to the history
+        self.moves.append((self.last_state, self.last_action, state))  # Add the experience to the history
 
         self.last_state = state  # Update the last_state with the current state
 
@@ -86,9 +84,7 @@ class Bot(object):
             # Q-learning 更新
             old_val = qvalues[state][act]
             q_max = max(qvalues[res_state])
-            self.qvalues[state][act] = (1 - lr) * old_val + lr * (
-                cur_reward + discount * q_max
-            )
+            self.qvalues[state][act] = (1 - lr) * old_val + lr * (cur_reward + discount * q_max)
 
             t += 1
 
